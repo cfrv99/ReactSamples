@@ -1,24 +1,24 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import DiceRoll from './DiceRoll';
+import AddIcon from './AddIcon';
+import CoinContainer from './CoinContainer';
+import BoxList from './SizeBoxes/BoxList';
+import ToDoList from './ToDoApp/ToDoList';
 
 function App() {
   return (
+
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <DiceRoll/>
+      <hr></hr>
+      <AddIcon/>
+      <hr></hr>
+      <CoinContainer/>
+      <hr></hr>
+      <BoxList/>
+      <hr></hr>
+      <ToDoList/>
     </div>
   );
 }
